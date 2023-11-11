@@ -8,8 +8,11 @@
     <title>Document</title>
     <style>
         .box {
+            /* 可以使用插件来自动转rem的值  设计稿给多大就写多大 自动转rem*/
             width: 5rem;
             height: 5rem;
+            /* 弊端：如果发现宽高不对，无法从rem来进行判断是否正确； */
+            /* 所以一般会保留px源码，同时采用第三方工具动态监听转换比如gulp */
             background: #8ec04c;
         }
     </style>
