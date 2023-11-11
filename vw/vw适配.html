@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    /* 设置给375px的设计稿 */
+    /* 1vw = 3.75px */
+    .box {
+        /* width: 100px / 3.75px = 26.6667vw */
+        width: 26.6667vw;
+        height: 26.6667vw;
+        background: #8ec04c;
+    }
+
+    p {
+        font-size: 3.2vw;
+    }
+</style>
+
+<body>
+    <div class="box">
+        <p>46546</p>
+    </div>
+
+    vw相比于rem的优势:
+    优势一: 不用去计算html的font-size大小，也不需要给html设置这样一个font-size
+    优势二:不会因为设置html的font-size大小，而必须给body再设置一个font-size，防止继承
+    优势三:因为不依赖font-size的尺寸，所以不用担心某些原因html的font-size尺寸被篡改，页面尺寸混乱
+    优势四:vw相比于rem更加语义化，1vw刚好是1/100的viewport的大小
+    优势五: 可以具备rem之前所有的优点
+</body>
+
+</html>
