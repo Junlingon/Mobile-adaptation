@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>媒体查询</title>
+    <style>
+        /* 媒体查询 */
+        @media screen and (min-width:320px) {
+            html {
+                font-size: 20px;
+            }
+        }
+
+        @media screen and (min-width:375px) {
+            html {
+                font-size: 24px;
+            }
+        }
+
+        @media screen and (min-width:414px) {
+            html {
+                font-size: 28px;
+            }
+        }
+
+        @media screen and (min-width:480px) {
+            html {
+                font-size: 32px;
+            }
+        }
+
+        .box {
+            width: 5rem;
+            height: 5rem;
+            background: #8ec04c;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>45665456</p>
+    </div>
+    媒体查询的缺点:
+
+    我们需要针对不同的屏编写大量的媒体查询
+    如果动态改变尺寸，不会实时的进行更新
+</body>
+
+</html>
