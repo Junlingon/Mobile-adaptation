@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 统一视口 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ,maximum-scale=1.0,user-scalable=no">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 5rem;
+            height: 5rem;
+            background: #8ec04c;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p>45665456</p>
+    </div>
+    <script>
+        function resetHtmlFont() {
+            document.documentElement.style.fontSize = screen.width / 10 + 'px';
+        }
+        resetHtmlFont();
+        window.onresize = resetHtmlFont;
+    </script>
+</body>
+
+</html>
