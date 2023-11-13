@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            width: 100%;
+            /* 容器的宽度 */
+            height: 0;
+            /* 容器的高度，设置为0以便自适应背景图的长宽比 */
+            padding-bottom: 75%;
+            /* 根据背景图的长宽比来设置，示例中为4:3，即75% */
+            background-image: url('./cute.jpg');
+            /* 背景图的路径 */
+            background-size: cover;
+            /* 使用 cover 属性，保持长宽比充满容器 */
+            background-position: center;
+            /* 居中对齐背景图 */
+            background-repeat: no-repeat;
+            /* 不重复背景图 */
+        }
+
+        .container::after {
+            content: "";
+            display: block;
+            padding-bottom: 12.5%;
+            /* 留出裁剪余地，示例中为1/8 */
+            /* background-color: #fff; */
+            /* 或者使用循环色填充，例如 */
+            background-color: repeating-linear-gradient(45deg, #fff, #fff 10px, #000 10px, #000 20px);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <!-- 内容 -->
+    </div>
+</body>
+
+</html>
